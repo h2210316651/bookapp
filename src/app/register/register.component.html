@@ -1,0 +1,16 @@
+<h3>Register</h3>
+<label>
+    Email: <input [(ngModel)]="state.email"type="text" /> <br>
+</label>
+
+<label>
+    password: <input [(ngModel)]="state.password"type="password" /> <br>
+</label>
+
+<label>
+    Profile Pic: <input [(ngModel)]="state.pic"type="file" /> <br>
+</label>
+
+<button (click)="register()">
+    Register
+</button>

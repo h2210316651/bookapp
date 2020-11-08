@@ -1,0 +1,64 @@
+.rootContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.favourite{
+    width:40%;
+    height:50vh;
+    margin:1rem;
+    overflow-y: scroll;
+    background-color:black;
+}
+.author{
+    width:40%;
+    height:50vh;
+    margin:1rem;
+
+    background-color:red;
+}
+.recommendations{
+    width:40%;
+    height:50vh;
+    margin:1rem;
+    background-color:green;
+}
+
+.favCard{
+    color: black;
+    display: flex;
+    margin: 0.5rem;
+    padding: 0.5rem;;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 40%;
+    border-radius: 1rem;
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
+    .image{
+        width: 40%;
+        height: auto;
+
+    }
+
+}
+
+h3{
+    color: white;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.appbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}

@@ -1,0 +1,45 @@
+<div class="appbar">
+    <button *ngIf="!state.isLoggedIn"(click)="login()">Login</button>
+    <p style="color: black;" *ngIf="state.isLoggedIn">{{state.username}}</p>
+    <button *ngIf="state.isLoggedIn" (click)="logout()">Log Out</button>
+</div>
+<div class="nav">
+    <h1>Book App</h1>
+    <h2>Dashboard</h2> 
+</div>
+<div class="rootContainer">
+
+    <div class="favourite">
+        <h3>Favourites</h3>
+        <div class="favCard" *ngFor="let fav of state.favourites">
+            <div class="image">
+
+                <img width="100%" height="auto" [src]="fav.coverPic" />
+            </div>
+            <div class="details">
+                <p>{{fav.id}}</p>
+                <p>{{fav.name}}</p>
+                <p>{{fav.desc}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="author">
+        <h3>Authors</h3>
+        <div class="favCard" *ngFor="let author of state.author">
+            <p>{{author.id}}</p>
+            <p>{{author.name}}</p>
+            <p>{{author.desc}}</p>
+            <p>{{author.coverPic}}</p>
+        </div>
+    </div>
+    <div class="recommendations">
+        <h3>Recommendations</h3>
+        <div class="favCard" *ngFor="let recommendation of state.recommendations">
+            <p>{{recommendation.id}}</p>
+            <p>{{recommendation.name}}</p>
+            <p>{{recommendation.desc}}</p>
+            <p>{{recommendation.coverPic}}</p>
+        </div>
+
+    </div>
+</div>

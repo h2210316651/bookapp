@@ -1,0 +1,8 @@
+<div>
+    <p style="color: red;">{{state.err}}</p>
+    <label > Email: <input type="text" [(ngModel)]="state.email"/></label> <br>
+    <label>Password: <input type="password" [(ngModel)]="state.password" /></label>
+    <button (click)="login()">Login</button><br>    
+
+    <a [routerLink]="['/register']">New User? Sign up Here!</a>
+</div>
