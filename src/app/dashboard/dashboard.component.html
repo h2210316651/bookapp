@@ -1,4 +1,5 @@
 <div class="appbar">
+    <label> Search <input type="text"/> <button>Search</button></label>
     <button *ngIf="!state.isLoggedIn"(click)="login()">Login</button>
     <p style="color: black;" *ngIf="state.isLoggedIn">{{state.username}}</p>
     <button *ngIf="state.isLoggedIn" (click)="logout()">Log Out</button>
